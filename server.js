@@ -1,15 +1,15 @@
-import { createClient } from '@supabase/supabase-js'; 
 import dadosKanbanRouter from './dadosKanban/dadosKanban.js'; 
 
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+const { createClient } = require('@supabase/supabase-js');
 
 dotenv.config();
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(cors()); 
