@@ -1,9 +1,10 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cors from 'cors';
-import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js'; 
 import dadosKanbanRouter from './dadosKanban/dadosKanban.js'; 
+
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
 
 dotenv.config();
 
