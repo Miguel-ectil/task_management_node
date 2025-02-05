@@ -79,4 +79,4 @@ router.delete("/delete-task/:id", async (req, res) => {
   res.json({ message: "Tarefa excluída!" });
 });
 
-export default router; // 🟢 Agora exportamos o Router
+module.exports = router; // 🟢 Agora exportamos o Router
