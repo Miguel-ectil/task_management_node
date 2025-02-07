@@ -10,9 +10,9 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY
 
 // 🟢 Criar uma nova tarefa
 router.post("/create-task", async (req, res) => {
-  const { title, description, finalDate, priority, status } = req.body;
+  const { title, description, final_date, priority, status } = req.body;
 
-  if (!title || !finalDate) {
+  if (!title || !final_date) {
     return res.status(400).json({ error: "Título e data final são obrigatórios" });
   }
 
@@ -24,7 +24,7 @@ router.post("/create-task", async (req, res) => {
   const { data, error } = await supabase.from("tasks").insert([{
     title, 
     description, 
-    final_date: finalDate, 
+    final_date: final_date, 
     priority, 
     status: status || 'pendente'
   }]);
