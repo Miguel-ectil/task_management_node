@@ -16,8 +16,7 @@ Este é o backend do sistema **TODO List - Gerenciador de Tarefas**, responsáve
 ✅ Criar novas tarefas  
 ✅ Listar todas as tarefas  
 ✅ Atualizar o status das tarefas  
-✅ Excluir tarefas  
-✅ Conectar ao banco de dados **Supabase (PostgreSQL)**  
+✅ Excluir tarefas
 
 ## 🔗 Repositório do Frontend  
 
